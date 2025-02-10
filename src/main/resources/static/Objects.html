@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Objects</title>
+    <title>OBJECTS</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
     <style>
          .nav-link:hover {
             text-decoration: underline;
@@ -15,6 +13,7 @@
     </style>
 </head>
 <body style="background-color: #e2d8e4;">
+    <body style="background-color: #e2d8e4;">
     
     <nav class="navbar navbar-expand-lg" style="background-color: #aa8caf;">
     <div class="container-fluid">
@@ -50,10 +49,193 @@
         </div>
     </div>
 </nav>
-    <br>
-    <br>
-    <br>
-    <div style="text-align: center">
-        
-        <h1 style="text-align: center; font-size: 55px; font-family: 'Caprasimo', sans-serif;">OBJECTS</h1>
-        
+    <!-- Contenedor principal -->
+    <div class="container mt-4">
+        <h1 class="mb-4">OBJECTS</h1>
+
+        <!-- Alerta -->
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            <i class="bi bi-info-circle-fill me-2"></i> Objects updated yearly!
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+
+        <!-- Formulario de búsqueda -->
+        <form class="mb-4">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Find Object...">
+                <button class="btn btn-primary" type="submit">Search</button>
+            </div>
+        </form>
+
+        <!-- Grid system para productos -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Tarjeta de producto 1 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/Gem_Rejuvenator.webp" class="card-img-top" alt="Weapons">
+                    <div class="card-body">
+                        <h5 class="card-title">Gem Rejuvenator</h5>
+                        <p class="card-text">Strips Gems of their memories causing them to revert to their original selves. </p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ObjectModal">
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta de producto 2 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/The_Cluster.webp" class="card-img-top" alt="Weapons">
+                    <div class="card-body">
+                        <h5 class="card-title">The Cluster</h5>
+                        <p class="card-text">Massive Cluster Gem buried inside of the Earth's core.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ObjectModal">
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta de producto 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/Limb_Enhancers.webp" class="card-img-top" alt="Technology">
+                    <div class="card-body">
+                        <h5 class="card-title">Limb Enhancers</h5>
+                        <p class="card-text">Tool for gems who lack powers or height.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ObjectModal">
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta de producto 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/Blue_Diamond_Ship.webp" class="card-img-top" alt="Technology">
+                    <div class="card-body">
+                        <h5 class="card-title">Diamond Ships</h5>
+                        <p class="card-text">Personal spacecrafts for the Diamonds only.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ObjectModal">
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta de producto 5 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/gem bubbles.webp" class="card-img-top" alt="Magical Items">
+                    <div class="card-body">
+                        <h5 class="card-title">Gem Bubbles</h5>
+                        <p class="card-text">Bubbles to contain corrupted Gems.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ObjectModal">
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta de producto 6 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/rose fountain.webp" class="card-img-top" alt="Magical Items">
+                    <div class="card-body">
+                        <h5 class="card-title">Rose's Fountain</h5>
+                        <p class="card-text">Sacred sanctuary powered by the healing tears of Rose Quartz.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ObjecttModal">
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabla de caracteristicas -->
+        <h2 class="mt-5 mb-3">Characteristics</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Contents</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Weapons</td>
+                    <td>List of weapons</td>
+                </tr>
+                <tr>
+                    <td>Technology</td>
+                    <td>Machines, appliances, and gadgets</td>
+                </tr>
+                <tr>
+                    <td>Magical Items</td>
+                    <td>This category contains relics, artifacts, and other items related to Gems</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Dropdown y List group -->
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h3>Types</h3>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                        Select Type
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Weapons</a></li>
+                        <li><a class="dropdown-item" href="#">Technology</a></li>
+                        <li><a class="dropdown-item" href="#">Magical Items</a></li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <br>
+        <div class="row mt-5">
+            <div class="col-md-8 offset-md-2">
+                <h2 class="mb-4">Add new object</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Appearence</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Ability</label>
+                        <input type="tel" class="form-control" id="telefono">
+                    </div>
+                    <div class="mb-3">
+                        <label for="producto" class="form-label"></label>
+                        <select class="form-select" id="producto">
+                            <option selected>Select a type</option>
+                            <option value="1">Weapon</option>
+                            <option value="2">Technology</option>
+                            <option value="3">Magical Item</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Light Description</label>
+                        <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+          <br>
+          <br>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <footer class="text-center text-white mt-5" style="background-color: #aa8caf; width: 100%; height: 90px; padding: 5px 0;">
+    <p>&copy; 2025 Steven Universe Wiki | All rights reserved.</p>
+    <p>
+        <a href="https://x.com/steven_wiki?lang=es" class="text-white me-3">Twitter</a> |
+        <a href="https://www.facebook.com/StevenUniverseWiki/" class="text-white me-3">Facebook</a> |
+        <a href="https://www.instagram.com/rebeccasugar/?hl=es" class="text-white">Instagram</a>
+    </p>
+</footer>
+    </div>
+</body>
+</html>
